@@ -13,14 +13,14 @@
       direction: rtl;
     }
 
-    /* هدر سایت */
+    /* هدر سایت با رنگ پررنگ‌تر */
     .site-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #ccc;
+      background-color: #444; /* رنگ خاکستری تیره‌تر */
       padding: 15px 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .logo img {
@@ -41,7 +41,7 @@
 
     .main-nav a {
       text-decoration: none;
-      color: white;
+      color: #fff;
       font-weight: bold;
       padding: 8px 12px;
       border-radius: 6px;
@@ -49,7 +49,7 @@
     }
 
     .main-nav a:hover {
-      background-color: #aaa;
+      background-color: #666;
     }
 
     .main-nav a.active {
@@ -70,7 +70,7 @@
     }
 
     .video-section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -81,12 +81,16 @@
       background-color: #fff;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      height: 400px; /* هماهنگ با iframe */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .video-box iframe {
       width: 100%;
-      height: 300px;
+      height: 100%;
       border: none;
       border-radius: 10px;
     }
@@ -119,6 +123,7 @@
         <li><a href="index.html" class="active">خانه</a></li>
         <li><a href="works.html">نمونه‌کار</a></li>
         <li><a href="contact.html">راه‌های ارتباطی</a></li>
+        <li><a href="about.html">درباره ما</a></li>
       </ul>
     </nav>
   </header>
