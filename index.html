@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>قالب مذهبی</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خانه</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top-bar">
-    <div class="logo-area">
-      <img src="logo.png" alt="لوگو">
-    </div>
-    <nav class="menu-area">
-      <ul>
-        <li><a href="#">خانه</a></li>
-        <li><a href="#">نمونه‌کار</a></li>
-        <li><a href="#">راه‌های ارتباطی</a></li>
-      </ul>
-    </nav>
-  </header>
-</body>
-</html>
+
+  <!-- منوی بالا -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="contact.html">راه‌های ارتباطی</a></li>
+      <li><a href="works.html">نمونه‌کار</a></li>
+      <li><a href="index.html" class="active">خانه</a></li>
+    </ul>
+  </nav>
+
+  <!-- گالری ویدئو -->
+  <section class="video-gallery">
+    <h2>نماهنگ‌های معنوی</h2>
+    <div class="grid-container">
+      <div class="video-thumb" onclick="openVideo('https://www.aparat.com/v/tvikgwh')">
+        <img src="thumb1.jpg" alt="ویدئو ۱">
+        <p>ویدئو ۱</p>
+      </div>
+      <div class="video-thumb" onclick="openVideo('https://www.aparat.com/video/video/embed/videohash/abc123/vt/frame')">
+        <img src="thumb2.jpg" alt="ویدئو ۲">
+        <p>ویدئو ۲</p>
+      </div>
+      <div class="video-thumb" onclick="openVideo('https://www.aparat.com/video/video/embed/videohash/xyz789/vt/frame')">
+        <img src="thumb3.jpg" alt="ویدئو ۳">
+        <p>ویدئو ۳</p>
+      </div>
+      <div class="video-thumb" onclick="openVideo('https
