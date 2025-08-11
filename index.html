@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ارتباط با گروه هنری بر بال بوریا</title>
+  <title>سایت معنوی | بر بال بوریا</title>
 
   <style>
     body {
@@ -61,30 +61,52 @@
     /* محتوای اصلی */
     main {
       padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
       text-align: center;
     }
 
     main h1 {
       font-size: 28px;
       color: #333;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    .contact-info {
+    .video-section {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .video-box {
       background-color: #fff;
-      padding: 30px;
+      padding: 12px;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      text-align: right;
-      line-height: 2;
-      font-size: 18px;
-      color: #444;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .video-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
     }
 
     /* واکنش‌گرا برای موبایل */
     @media (max-width: 768px) {
+      .video-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .video-box {
+        height: 220px;
+      }
+
       .main-nav ul {
         flex-direction: column;
         align-items: flex-start;
@@ -94,13 +116,8 @@
         margin: 10px 0;
       }
 
-      main {
-        padding: 20px;
-      }
-
-      .contact-info {
-        padding: 20px;
-        font-size: 16px;
+      main h1 {
+        font-size: 22px;
       }
     }
 
@@ -123,9 +140,9 @@
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">خانه</a></li>
+        <li><a href="index.html" class="active">خانه</a></li>
         <li><a href="works.html">نمونه‌کار</a></li>
-        <li><a href="contact.html" class="active">راه‌های ارتباطی</a></li>
+        <li><a href="contact.html">راه‌های ارتباطی</a></li>
         <li><a href="about.html">درباره ما</a></li>
       </ul>
     </nav>
@@ -133,14 +150,16 @@
 
   <!-- محتوای اصلی -->
   <main>
-    <h1>ارتباط با گروه هنری بر بال بوریا</h1>
+    <h1>به سایت معنوی خوش آمدید</h1>
 
-    <div class="contact-info">
-      📞 تلفن تماس: 0912-XXX-XXXX  
-      📧 ایمیل: boriyagroup@example.com  
-      📱 اینستاگرام: @boriyagroup  
-      📍 آدرس: تهران، خیابان هنر، پلاک ۱۲۳  
-    </div>
+    <section class="video-section">
+      <div class="video-box">
+        <iframe src="https://www.aparat.com/video/video/embed/videohash/tvikgwh/vt/frame" allowfullscreen></iframe>
+      </div>
+      <div class="video-box">
+        <iframe src="https://www.aparat.com/video/video/embed/videohash/a03etfy/vt/frame" allowfullscreen></iframe>
+      </div>
+    </section>
   </main>
 
   <!-- فوتر -->
