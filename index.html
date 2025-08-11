@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سایت من</title>
+  <title>سایت معنوی امیرمهدی</title>
 
   <!-- استایل داخلی -->
   <style>
@@ -24,10 +24,8 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: white;
+    .logo img {
+      height: 50px;
     }
 
     /* منو */
@@ -60,6 +58,17 @@
       color: #fff;
     }
 
+    /* محتوای اصلی */
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 28px;
+      color: #333;
+    }
+
     /* فوتر */
     .site-footer {
       text-align: center;
@@ -72,9 +81,11 @@
 </head>
 <body>
 
-  <!-- هدر سایت -->
+  <!-- هدر سایت با لوگو و منو -->
   <header class="site-header">
-    <div class="logo">لوگو بیا</div>
+    <div class="logo">
+      <img src="logo.png" alt="لوگوی سایت">
+    </div>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html" class="active">خانه</a></li>
@@ -86,19 +97,14 @@
 
   <!-- محتوای اصلی -->
   <main>
-    <h1 style="text-align:center; margin-top:50px;">به سایت معنوی خوش آمدید</h1>
-    <!-- اینجا بعداً ویدئوها یا بخش‌های دیگه اضافه می‌شن -->
+    <h1>به سایت معنوی امیرمهدی خوش آمدید</h1>
+    <!-- اینجا بعداً گالری ویدئو یا بخش‌های دیگر اضافه می‌شود -->
   </main>
 
   <!-- فوتر -->
   <footer class="site-footer">
     <p>© 2025 - طراحی توسط امیرمهدی</p>
   </footer>
-
-  <!-- اسکریپت داخلی (در صورت نیاز) -->
-  <script>
-    // فعلاً چیزی نداریم، ولی اینجا می‌تونی کدهای JS بنویسی
-  </script>
 
 </body>
 </html>
