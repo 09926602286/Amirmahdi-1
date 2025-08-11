@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سایت معنوی امیرمهدی</title>
+  <title>ارتباط با گروه هنری بر بال بوریا</title>
 
   <style>
     body {
@@ -13,26 +13,27 @@
       direction: rtl;
     }
 
-    /* هدر سایت با رنگ پررنگ‌تر */
+    /* نوار بالا */
     .site-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #444; /* رنگ خاکستری تیره‌تر */
+      background-color: #444;
       padding: 15px 30px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      flex-wrap: wrap;
     }
 
     .logo img {
       height: 50px;
     }
 
-    /* منو */
     .main-nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
+      flex-wrap: wrap;
     }
 
     .main-nav li {
@@ -60,39 +61,47 @@
     /* محتوای اصلی */
     main {
       padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
       text-align: center;
     }
 
     main h1 {
       font-size: 28px;
       color: #333;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
-    .video-section {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-    }
-
-    .video-box {
+    .contact-info {
       background-color: #fff;
-      padding: 20px;
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.15);
-      height: 400px; /* هماهنگ با iframe */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: right;
+      line-height: 2;
+      font-size: 18px;
+      color: #444;
     }
 
-    .video-box iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 10px;
+    /* واکنش‌گرا برای موبایل */
+    @media (max-width: 768px) {
+      .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav li {
+        margin: 10px 0;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .contact-info {
+        padding: 20px;
+        font-size: 16px;
+      }
     }
 
     /* فوتر */
@@ -103,26 +112,20 @@
       color: #666;
       margin-top: 50px;
     }
-
-    @media (max-width: 768px) {
-      .video-section {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <!-- هدر سایت با لوگو و منو -->
+  <!-- نوار بالا -->
   <header class="site-header">
     <div class="logo">
       <img src="logo.png" alt="لوگوی سایت">
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html" class="active">خانه</a></li>
+        <li><a href="index.html">خانه</a></li>
         <li><a href="works.html">نمونه‌کار</a></li>
-        <li><a href="contact.html">راه‌های ارتباطی</a></li>
+        <li><a href="contact.html" class="active">راه‌های ارتباطی</a></li>
         <li><a href="about.html">درباره ما</a></li>
       </ul>
     </nav>
@@ -130,21 +133,19 @@
 
   <!-- محتوای اصلی -->
   <main>
-    <h1>به سایت معنوی خوش آمدید</h1>
+    <h1>ارتباط با گروه هنری بر بال بوریا</h1>
 
-    <section class="video-section">
-      <div class="video-box">
-        <iframe src="https://www.aparat.com/video/video/embed/videohash/tvikgwh/vt/frame" allowfullscreen></iframe>
-      </div>
-      <div class="video-box">
-        <iframe src="https://www.aparat.com/video/video/embed/videohash/a03etfy/vt/frame" allowfullscreen></iframe>
-      </div>
-    </section>
+    <div class="contact-info">
+      📞 تلفن تماس: 0912-XXX-XXXX  
+      📧 ایمیل: boriyagroup@example.com  
+      📱 اینستاگرام: @boriyagroup  
+      📍 آدرس: تهران، خیابان هنر، پلاک ۱۲۳  
+    </div>
   </main>
 
   <!-- فوتر -->
   <footer class="site-footer">
-    <p>© 2025 - طراحی توسط امیرمهدی</p>
+    <p>© 2025 - طراحی توسط گروه هنری بر بال بوریا</p>
   </footer>
 
 </body>
