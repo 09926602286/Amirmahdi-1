@@ -109,6 +109,54 @@
       display: block;
     }
 
+    /* فوتر ساده */
+    .site-footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      color: #666;
+      margin-top: 50px;
+    }
+
+    /* نوار ارتباطی پایین */
+    .contact-bar {
+      background-color: #222;
+      padding: 50px 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact-content {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .contact-logo {
+      height: 90px;
+      margin-bottom: 25px;
+    }
+
+    .contact-content h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .social-icons img {
+      height: 55px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
     /* واکنش‌گرا برای موبایل */
     @media (max-width: 768px) {
       .video-section {
@@ -136,21 +184,24 @@
       .logo img {
         height: 40px;
       }
-    }
 
-    /* فوتر */
-    .site-footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eee;
-      color: #666;
-      margin-top: 50px;
+      .contact-logo {
+        height: 70px;
+      }
+
+      .contact-content h2 {
+        font-size: 22px;
+      }
+
+      .social-icons img {
+        height: 45px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- نوار بالا با لوگو و عنوان -->
+  <!-- نوار بالا -->
   <header class="site-header">
     <div class="logo">
       <img src="logo.png" alt="لوگوی گروه هنری">
@@ -184,10 +235,26 @@
     </section>
   </main>
 
-  <!-- فوتر -->
+  <!-- فوتر ساده -->
   <footer class="site-footer">
     <p>© 2025 - طراحی توسط گروه هنری بر بال بوریا</p>
   </footer>
+
+  <!-- نوار ارتباطی پایین -->
+  <div class="contact-bar">
+    <div class="contact-content">
+      <img src="logo.png" alt="لوگوی شما" class="contact-logo">
+      <h2>راه‌های ارتباطی</h2>
+      <div class="social-icons">
+        <a href="https://rubika.ir/yourpage" target="_blank">
+          <img src="rubika-logo.png" alt="روبیکا">
+        </a>
+        <a href="https://eitaa.com/yourpage" target="_blank">
+          <img src="eitaa-logo.png" alt="ایتا">
+        </a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
